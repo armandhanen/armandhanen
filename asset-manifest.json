@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/armandhanen/static/css/main.14bf4c8c.css",
+    "main.js": "/armandhanen/static/js/main.0d7a882f.js",
+    "static/js/453.afe6e986.chunk.js": "/armandhanen/static/js/453.afe6e986.chunk.js",
+    "index.html": "/armandhanen/index.html",
+    "main.14bf4c8c.css.map": "/armandhanen/static/css/main.14bf4c8c.css.map",
+    "main.0d7a882f.js.map": "/armandhanen/static/js/main.0d7a882f.js.map",
+    "453.afe6e986.chunk.js.map": "/armandhanen/static/js/453.afe6e986.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14bf4c8c.css",
+    "static/js/main.0d7a882f.js"
+  ]
+}

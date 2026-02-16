@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Moon, Sun, Github, Linkedin, Mail, ExternalLink, ChevronDown, ArrowRight, Brain, Code2, Database, TrendingUp, Filter, Award, MapPin, BookOpen, Trophy, Menu, X, ChevronRight, Briefcase, GraduationCap, Phone, Globe } from "lucide-react";
+import { Moon, Sun, Github, Linkedin, Mail, ExternalLink, ChevronDown, ArrowRight, Brain, Code2, Database, TrendingUp, Filter, Award, MapPin, BookOpen, Trophy, Menu, X, ChevronRight, Briefcase, GraduationCap, Phone, Globe, Download } from "lucide-react";
 
 const FONTS_CSS = `
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
@@ -139,6 +139,29 @@ function Navbar({ dark, setDark, activeSection }) {
               onMouseLeave={(e) => { if (activeSection !== item.toLowerCase()) e.target.style.color = dark ? "rgba(241,245,249,0.6)" : "rgba(15,23,42,0.5)"; }}
             >{item}</a>
           ))}
+          <a 
+            href="https://drive.google.com/file/d/1kNs-4eeSvPbDoShC6PHjdbBr6rwhftoS/view?usp=drive_link" 
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: 6,
+              padding: "8px 16px",
+              borderRadius: 10,
+              background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
+              color: "#fff",
+              textDecoration: "none",
+              fontSize: 13,
+              fontWeight: 600,
+              transition: "all 0.3s ease",
+            }}
+            onMouseEnter={(e) => e.target.style.transform = "translateY(-2px)"}
+            onMouseLeave={(e) => e.target.style.transform = "translateY(0)"}
+          >
+            <Download size={14} />
+            CV
+          </a>
           <button onClick={() => setDark(!dark)} style={{
             background: dark ? "rgba(139,92,246,0.1)" : "rgba(99,102,241,0.08)",
             border: `1px solid ${dark ? "rgba(139,92,246,0.2)" : "rgba(99,102,241,0.15)"}`,
